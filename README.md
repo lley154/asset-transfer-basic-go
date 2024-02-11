@@ -10,7 +10,7 @@ Go into the test network directory
 ```
 cd ../../test-network
 ./network.sh down  
-sudo ./network.sh up createChannel   -ca -c mychannel
+sudo ./network.sh up createChannel -ca -c mychannel
 sudo chmod a+rwx log.txt ## this is only done for lab env
 sudo chmod a+rwx -R organizations  ## this is only done for lab env
 ```
