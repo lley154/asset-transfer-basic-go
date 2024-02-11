@@ -2,6 +2,7 @@
 
 Note: Lab 1 must be already completed
 ```
+sudo reboot ## restart your vm to free up resources
 sudo apt install golang-go
 cd fabric-samples/asset-transfer-basic/chaincode-go
 GO111MODULE=on go mod vendor
