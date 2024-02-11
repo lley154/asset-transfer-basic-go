@@ -2,7 +2,7 @@
 
 Note: Lab 1 must be already completed
 ```
-apt install golang-go
+sudo apt install golang-go
 cd fabric-samples/asset-transfer-basic/chaincode-go
 GO111MODULE=on go mod vendor
 ```
