@@ -54,7 +54,7 @@ peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.exa
 ```
 Query the chaincode
 ```
-peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}'
+peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}' | jq
 ```
 
 
