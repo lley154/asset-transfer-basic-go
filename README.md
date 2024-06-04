@@ -3,22 +3,38 @@
 Note: Lab 1 must be already completed
 ```
 sudo reboot ## restart your vm to free up resources
+```
+```
 sudo apt install golang-go
+```
+```
 cd fabric-samples/asset-transfer-basic/chaincode-go
+```
+```
 GO111MODULE=on go mod vendor
 ```
 Go into the test network directory
 ```
 cd ../../test-network
-sudo ./network.sh down  
-sudo ./network.sh up createChannel -ca -c mychannel
+```
+```
+./network.sh down  
+```
+```
+./network.sh up createChannel -ca -c mychannel
+```
+```
 sudo chmod a+rwx log.txt ## this is only done for lab env
+```
+```
 sudo chmod a+rwx -R organizations  ## this is only done for lab env
 ```
 Export paths and config directory
 ```
 export PATH=${PWD}/../bin:$PATH
+```
 export FABRIC_CFG_PATH=$PWD/../config/
+```
 ./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go
 ```
 The chain code should be successfully deployed.
