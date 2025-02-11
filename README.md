@@ -5,6 +5,7 @@ Note: Lab 1 must be already completed
 sudo reboot ## restart your vm to free up resources
 ```
 ```
+sudo apt update
 sudo apt install golang-go
 ```
 ```
